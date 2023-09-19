@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Library</title>
-</head>
-<div class="container">
-    <div class="header">
-        <div class="header-left">Your Library</div>
-        <div class="header-right">Sign in</div>
-    </div>
-    <div class="main">
-        <p>A table will be displayed here</p>
+  </head>
+  <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-left">Your Library</div>
+                <div class="header-right">Sign in</div>
+            </div>
+            <div class="main">
+                <div class="sidebar">
+                    <form action="#" class="form">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" placeholder="Book title">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" name="author" placeholder="Author's name">
+                        <label for="pages">Number of pages</label>
+                        <input type="number" id="pages" name="page" placeholder="Page number">
+                        <div class="check-box">
+                            <div class="read-question">
+                                Have you read it?
+                            </div>
+                            <label for="read">
+                                <input type="checkbox" id="read" name="read" value="read">
+                            </label>
+                        </div>
+                        <button id="submit" type="submit" class="btn">Add New Book</button>
+                    </form>
+                </div>
+                <div class="display">
+                    
+                    Book list
 
-    </div>
-    <div class="footer">
-        <p>© 2023 Nick Ngouma</p>
-    </div>
-</div>
-<script src="script.js"></script>
-<body> 
-</body>
-</html>       
+                </div>
+            </div>
+            <div class="footer">
+                <p>© 2023 Nick Ngouma</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+   </body>
+</html>
